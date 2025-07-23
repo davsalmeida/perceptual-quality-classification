@@ -44,11 +44,23 @@ Search for these lines and follow the comments next to them.
 
 * **Base model selection** (Uncomment exactly one line to pick another backbone)
 
+from tensorflow.keras.applications import ResNet50 as BaseModel
+from tensorflow.keras.applications import MobileNetV2 as BaseModel
+from tensorflow.keras.applications import DenseNet121 as BaseModel
+…
+
 * **Training folder**  
 
 Change the string to  
 `'GOOD_QUALITY_TRAINING'`, `'POOR_QUALITY_TRAINING'`, or `'COMBINED_QUALITY_TRAINING'`  
 depending on which subset you want.
+
+* **Training Parameters**
+
+image_height, image_width = 240, 320 # resize each input image
+n_eps = 40 # epochs per model
+imgs_per_batch = 64 # batch size
+n_models = 2 # how many independent runs
 
 ---
 
