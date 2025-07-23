@@ -38,11 +38,11 @@ After unzipping you must see the following items:
 6. Saves per-epoch metrics to CSV
 
 
-## 4. Lines you may want to edit in `Train_Test_.py`
+## 3. Lines you may want to edit in `Train_Test_.py`
 
 Search for these lines and follow the comments next to them.
 
-* **Base model selection**
+* **Base model selection** (Uncomment exactly one line to pick another backbone)
 
 from tensorflow.keras.applications import ResNet50        as BaseModel
 from tensorflow.keras.applications import MobileNetV2      as BaseModel
@@ -50,7 +50,7 @@ from tensorflow.keras.applications import DenseNet121      as BaseModel
 from tensorflow.keras.applications import EfficientNetB0   as BaseModel
 from tensorflow.keras.applications import EfficientNetV2B3  as BaseModel
 
-- Uncomment exactly one line to pick another backbone.
+
 
 
 
