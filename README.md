@@ -51,18 +51,21 @@ from tensorflow.keras.applications import ResNet50        as BaseModel
 # from tensorflow.keras.applications import EfficientNetV2B3 as BaseModel
 ```
 
-* **Training folder**  
+* **Training folder**
+```
+train_folder = 'GOOD_QUALITY_TRAIN'             # Select the folder with the images for training
+```
 
 Change the string to  
 `'GOOD_QUALITY_TRAINING'`, `'POOR_QUALITY_TRAINING'`, or `'COMBINED_QUALITY_TRAINING'`  
 depending on which subset you want.
 
 * **Training Parameters**
-
-image_height, image_width = 240, 320 # resize each input image
+```
 n_eps = 40 # epochs per model
 imgs_per_batch = 64 # batch size
-n_models = 2 # how many independent runs
+n_models = 3 # how many independent runs
+```
 
 ---
 
