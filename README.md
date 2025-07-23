@@ -44,27 +44,19 @@ Search for these lines and follow the comments next to them.
 
 * **Base model selection** (Uncomment exactly one line to pick another backbone)
 
-from tensorflow.keras.applications import ResNet50        as BaseModel
-from tensorflow.keras.applications import MobileNetV2      as BaseModel
-from tensorflow.keras.applications import DenseNet121      as BaseModel
-from tensorflow.keras.applications import EfficientNetB0   as BaseModel
-from tensorflow.keras.applications import EfficientNetV2B3  as BaseModel
-
-
-
-
-
 * **Training folder**  
 
 Change the string to  
 `'GOOD_QUALITY_TRAINING'`, `'POOR_QUALITY_TRAINING'`, or `'COMBINED_QUALITY_TRAINING'`  
 depending on which subset you want.
 
+---
 
 If you use this code or the accompanying data, please cite our work:
 
 > D. S. Almeida, E. Pedrosa and N. Lau, "Examining the Role of Perceptual Quality in Underwater Image Classification," 2025 IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC), Funchal, Portugal, 2025, pp. 1-8, doi: 10.1109/ICARSC65809.2025.10970163.
 
+---
 
 Our dataset originates from the EUVP Dataset.
 Link to the original EUVP Dataset  →  https://irvlab.cs.umn.edu/resources/euvp-dataset
