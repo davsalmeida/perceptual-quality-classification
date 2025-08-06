@@ -29,10 +29,10 @@ np.set_printoptions(precision=6, suppress=True)
 pd.set_option('display.precision', 6)
 
 train_folder = 'GOOD_QUALITY_TRAIN'             # Select the folder with the images for training
-validation_folder = 'Validation_Images'
-p_validation_folder = 'P_Validation_Images'
-validation_csv = 'validation_data_classes.csv'
-p_validation_csv = 'P_validation_data_classes.csv'
+validation_folder = 'Test_Images'
+p_validation_folder = 'P_Test_Images'
+validation_csv = 'Test_data_classes.csv'
+p_validation_csv = 'P_Test_data_classes.csv'
 
 # Define parameters
 image_height, image_width = 240, 320  # original size of each image
