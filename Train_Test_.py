@@ -38,7 +38,7 @@ p_validation_csv = 'P_Test_data_classes.csv'
 image_height, image_width = 240, 320  # original size of each image
 n_eps = 40  # number of epochs per model
 imgs_per_batch = 64
-n_models = 2 # number of models trained
+n_models = 3 # number of models trained
 
 # Generate all training and testing data
 train_datagen = ImageDataGenerator(
